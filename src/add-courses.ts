@@ -3,7 +3,7 @@ import { MiraModel } from './models/mira-models';
 
 async function addCourses() {
   try {
-await mongoose.connect("mongodb+srv://statement-admin:cu5xJBInZ2dCnVcU@cluster-st-trading.af1cq.mongodb.net/prod-mirantes-mira?retryWrites=true&w=majority")
+await mongoose.connect("")
     const miras = await MiraModel.find({job_fair_type: "gold"});
 
     for (const mira of miras) {
