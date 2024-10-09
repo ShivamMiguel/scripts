@@ -1,4 +1,4 @@
-import { Schema } from 'mongoose';
+import { model, Schema } from 'mongoose';
 import { MiraModel } from './mira-models';
 
 const courseMiraSchema = new Schema({
@@ -25,3 +25,5 @@ const courseMiraSchema = new Schema({
     default: Date.now,
   },
 });
+
+export const MiraCourseModel = model("course_mira", courseMiraSchema);

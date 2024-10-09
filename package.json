@@ -13,6 +13,7 @@
     "@types/mongoose": "^5.11.97",
     "module-alias": "^2.2.3",
     "mongoose": "^8.5.4",
+    "scripts": "file:",
     "typescript": "^5.5.4"
   }
 }
