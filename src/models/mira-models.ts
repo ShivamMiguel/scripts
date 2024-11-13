@@ -18,7 +18,7 @@ export const MiraSchema = new Schema(
       {
         skill: {
           type: Schema.Types.ObjectId,
-          ref: "skilss",
+          ref: "skills",
           default: null,
         },
       },
@@ -45,6 +45,10 @@ export const MiraSchema = new Schema(
     companyInterests: [{ type: String }],
 
     dateOfBirth: { type: Date },
+    shareable_sections: {
+      type: [String],
+      default: [],
+    },
   },
   {
     timestamps: true,

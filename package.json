@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/add-courses.js"
+    "start": "tsc && node dist/add-shareable-sections.js"
   },
   "author": "",
   "license": "ISC",
