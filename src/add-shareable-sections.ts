@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import { MiraModel } from "./models/mira-models";
 
 (async () => {
@@ -8,6 +9,9 @@ import { MiraModel } from "./models/mira-models";
       "personal-info",
     ];
 
+    await mongoose.connect(
+      "mongodb+srv://statement-admin:cu5xJBInZ2dCnVcU@cluster-st-trading.af1cq.mongodb.net/dev-mirantes-mira?retryWrites=true&w=majority"
+    );
     const miras = await MiraModel.find({
       shareable_sections: { $nin: defaultSections },
     });
